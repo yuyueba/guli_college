@@ -42,7 +42,6 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     @Override
     public List<Permission> queryAllMenu() {
 
-
         QueryWrapper<Permission> wrapper = new QueryWrapper<>();
         wrapper.orderByDesc("id");
         List<Permission> permissionList = baseMapper.selectList(wrapper);
